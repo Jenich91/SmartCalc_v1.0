@@ -1,7 +1,7 @@
 #include <check.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "s21_smartCalc.h"
+#include "sfleta_smartCalc.h"
 
 START_TEST(test_plus) {
     char* inputStr = "12+5";
@@ -349,7 +349,7 @@ START_TEST(test_credit) {
 }
 END_TEST
 
-Suite *s21_suite(void) {
+Suite *sfleta_suite(void) {
     Suite *suite = suite_create("SmartCalc");
     TCase *tcase_core = tcase_create("Tests");
 
@@ -369,7 +369,7 @@ Suite *s21_suite(void) {
 }
 
 int main(void) {
-    Suite *suite = s21_suite();
+    Suite *suite = sfleta_suite();
     SRunner *suite_runner = srunner_create(suite);
     srunner_run_all(suite_runner, CK_NORMAL);
     int failed_count = srunner_ntests_failed(suite_runner);

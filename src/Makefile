@@ -1,4 +1,4 @@
-PROJECTNAME=s21_smartCalc
+PROJECTNAME=sfleta_smartCalc
 .PHONY: all clean test $(PROJECTNAME).a gcov_report linter cppcheck style_check
 
 INSTALL_PATH=../Build

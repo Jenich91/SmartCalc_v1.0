@@ -9,13 +9,13 @@ CONFIG += c++17
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    s21_smartCalc.c \
+    sfleta_smartCalc.c \
     main.cpp \
     mainqt.cpp \
     qcustomplot.cpp
 
 HEADERS += \
-    s21_smartCalc.h \
+    sfleta_smartCalc.h \
     mainqt.h \
     qcustomplot.h
 

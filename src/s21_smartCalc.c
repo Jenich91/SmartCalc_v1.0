@@ -1,4 +1,4 @@
-#include "s21_smartCalc.h"
+#include "sfleta_smartCalc.h"
 
 void push(stack_char *stack, char value) {
     if (stack->size < 256) {

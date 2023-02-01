@@ -52,12 +52,12 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = s21_smartCalc.c \
+SOURCES       = sfleta_smartCalc.c \
 		main.cpp \
 		mainqt.cpp \
 		qcustomplot.cpp moc_mainqt.cpp \
 		moc_qcustomplot.cpp
-OBJECTS       = s21_smartCalc.o \
+OBJECTS       = sfleta_smartCalc.o \
 		main.o \
 		mainqt.o \
 		qcustomplot.o \
@@ -316,9 +316,9 @@ DIST          = /usr/local/share/qt/mkspecs/features/spec_pre.prf \
 		/usr/local/share/qt/mkspecs/features/exceptions.prf \
 		/usr/local/share/qt/mkspecs/features/yacc.prf \
 		/usr/local/share/qt/mkspecs/features/lex.prf \
-		smartcalc.pro s21_smartCalc.h \
+		smartcalc.pro sfleta_smartCalc.h \
 		mainqt.h \
-		qcustomplot.h s21_smartCalc.c \
+		qcustomplot.h sfleta_smartCalc.c \
 		main.cpp \
 		mainqt.cpp \
 		qcustomplot.cpp
@@ -893,8 +893,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/local/share/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents s21_smartCalc.h mainqt.h qcustomplot.h $(DISTDIR)/
-	$(COPY_FILE) --parents s21_smartCalc.c main.cpp mainqt.cpp qcustomplot.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents sfleta_smartCalc.h mainqt.h qcustomplot.h $(DISTDIR)/
+	$(COPY_FILE) --parents sfleta_smartCalc.c main.cpp mainqt.cpp qcustomplot.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents mainqt.ui $(DISTDIR)/
 
 
@@ -978,8 +978,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
-s21_smartCalc.o: s21_smartCalc.c s21_smartCalc.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o s21_smartCalc.o s21_smartCalc.c
+sfleta_smartCalc.o: sfleta_smartCalc.c sfleta_smartCalc.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o sfleta_smartCalc.o sfleta_smartCalc.c
 
 main.o: main.cpp mainqt.h \
 		/usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
@@ -1000,7 +1000,7 @@ mainqt.o: mainqt.cpp mainqt.h \
 		/usr/local/lib/QtWidgets.framework/Headers/QToolTip \
 		/usr/local/lib/QtWidgets.framework/Headers/qtooltip.h \
 		ui_mainqt.h \
-		s21_smartCalc.h
+		sfleta_smartCalc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainqt.o mainqt.cpp
 
 qcustomplot.o: qcustomplot.cpp qcustomplot.h \

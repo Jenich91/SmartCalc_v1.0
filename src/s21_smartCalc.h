@@ -1,5 +1,5 @@
-#ifndef SRC_S21_SMARTCALC_H_
-#define SRC_S21_SMARTCALC_H_
+#ifndef SRC_sfleta_SMARTCALC_H_
+#define SRC_sfleta_SMARTCALC_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -56,4 +56,4 @@ char* tryRealloc(char* pointer, int j);
 
 double CreditCalc(double totalAmount, double period, double percentageRate, int mode);
 
-#endif  //  SRC_S21_SMARTCALC_H_
+#endif  //  SRC_sfleta_SMARTCALC_H_

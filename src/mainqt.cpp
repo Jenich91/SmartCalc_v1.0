@@ -4,7 +4,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    #include "s21_smartCalc.h"
+    #include "sfleta_smartCalc.h"
 #ifdef __cplusplus
 }
 #endif
